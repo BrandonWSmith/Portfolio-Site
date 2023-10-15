@@ -1,0 +1,20 @@
+header,
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+li {
+  margin-left: 2rem;
+}
