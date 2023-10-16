@@ -97,35 +97,49 @@ main {
 
 /* About Me */
 #about-me {
-
   margin: 0 auto;
   display: flex;
   flex-flow: column;
   text-align: center;
-  background-color: rgb(86, 97, 115);
+  align-items: center;
+  background-color: #EFD195;
 }
 
 #about-me h2 {
+  width: 10%;
   font-family: 'Raleway', sans-serif;
   color: #F4E8FF;
+  background-color: rgb(65, 71, 85)
 }
 
 #about-me img {
   width: 15%;
-  align-self: center;
 }
 
 #about-me p {
   width: 65%;
   padding: 1rem;
-  align-self: center;
   font-family: 'Frank Ruhl Libre', serif;
   color: #FEFFE8;
   background-color: rgb(65, 71, 85);
   box-shadow: 0.2rem 0.2rem black;
+  letter-spacing: .1rem;
+  word-spacing: .1rem;
+  line-height: 1.2rem;
 }
 
 #about-me p strong {
   color: #BCBF7A;
   text-shadow: 0.1rem 0.1rem black;
+}
+
+/* Goals */
+
+#goals {
+  position: relative;
+  background-image: url("../images/goals-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem;
 }
