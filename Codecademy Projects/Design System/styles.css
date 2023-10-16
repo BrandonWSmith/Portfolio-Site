@@ -1,0 +1,151 @@
+body {
+  background-color: lightgray;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+}
+
+#buttons {
+  margin-top: 75px;
+  text-align: center;
+}
+
+.button {
+  background-color: #000000;
+  width: 150px;
+  padding: 5px;
+}
+
+.button a {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #FF0000;
+}
+
+nav {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #000000;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.breadcrumb li {
+  position: relative;
+  top: -15px;
+  display: inline;
+}
+
+a {
+  color: #FF0000;
+}
+
+a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:active {
+  color: #808080;
+}
+
+.breadcrumb li+li::before {
+  content: ".";
+  font-size: 40px;
+  vertical-align: 5px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  font-family: "Pixelify Sans", cursive;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 26px;
+  font-family: "Oswald", sans-serif;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  text-decoration: underline;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Kanit", sans-serif;
+}
+
+section {
+  border: 2px solid grey;
+  padding-left: 10px;
+  margin: 10px 100px;
+}
+
+#colors div{
+  display: inline-block;
+  text-align: center;
+  width: 32%;
+  margin: 20px auto;
+  min-height: 100px;
+  min-width: 100px;
+}
+
+#red {
+  background-color: #FF0000;
+}
+
+#black {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+#white {
+  background-color: #FFFFFF;
+}
+
+#grey {
+  background-color: #808080;
+}
+
+#fonts div{
+  display: inline-block;
+  width: 45%;
+}
+
+#pixelify h3,
+#pixelify p {
+  font-family: "Pixelify Sans", cursive;
+}
+
+#oswald h3,
+#oswald p {
+  font-family: "Oswald", sans-serif;
+}
+
+#kanit h3,
+#kanit p {
+  font-family: "Kanit", sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold-italic {
+  font-weight: bold;
+  font-style: italic;
+}

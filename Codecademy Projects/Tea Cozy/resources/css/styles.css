@@ -1,0 +1,141 @@
+html {
+  background-color: black;
+  color: seashell;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  opacity: 0.5;
+}
+
+header,
+nav {
+  position: fixed;
+  width: 100%;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  background-color: black;
+  z-index: 1;
+}
+
+.logo {
+  float: left;
+  height: 50px;
+  margin: 10px 10px;
+}
+
+nav ul {
+  float: right;
+}
+
+nav li {
+  display: inline;
+  padding: 10px;
+}
+
+nav a {
+  color: seashell;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.mission {
+  position: relative;
+  top: 69px;
+  background-image: url("../images/img-mission-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  width: 100%;
+}
+
+.mission-statement {
+  background-color: black;
+  width: 100%;
+}
+
+.mission-statement h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.mission-statement h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.monthly {
+  width: 1000px;
+  margin: 200px auto 100px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.monthly-card{
+  margin: 0 15px;
+}
+
+.container h4 {
+  margin-top: 10px;
+}
+
+.monthly-image {
+  display: inline-flex;
+  height: 200px;
+  width: 300px;
+}
+
+.locations {
+  background-image: url("../images/img-locations-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 570px;
+  width: 100%;
+  line-height: 0;
+  margin: 0;
+}
+
+.locations-header {
+  padding-top: 75px;
+}
+
+.locations-container {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.address {
+  background-color: black;
+  width: 300px;
+  margin: 15px 20px;
+  line-height: 1.7;
+  padding-top: 0;
+}
+
+footer h2 {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.footer-container {
+  height: 200px;
+}
+
+.copyright {
+  float: left;
+  margin-left: 20px;
+}
