@@ -120,7 +120,7 @@ header a:active {
 
 
 
-/* main */
+/* main (fixed header offset)*/
 
 
 
@@ -163,7 +163,7 @@ main {
   font-family: 'Frank Ruhl Libre', serif;
   color: #FEFFE8;
   background-color: rgb(65, 71, 85);
-  box-shadow: 0.2rem 0.2rem black;
+  box-shadow: 0.2rem 0.2rem 0.5rem black;
   letter-spacing: 0.1rem;
   word-spacing: 0.1rem;
   line-height: 1.3rem;
@@ -325,7 +325,7 @@ main {
 #projects {
   position: relative;
   top: -1.206rem;
-  height: 50rem;
+  min-height: 50rem;
   background-image: url("../images/projects-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -354,18 +354,18 @@ main {
   z-index: 1;
 }
 
-#projects h2 {
+.project-content h2 {
   color: #414755;
   background-color: #BCBF7AE6;
 }
 
-#projects h3 {
+.project-content h3 {
   color: #071215;
   background-color: #BCBF7AE6;
   padding: 0.3rem 0.5rem;
 }
 
-#projects ul {
+.project-content ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -373,27 +373,38 @@ main {
   text-align: center;
 }
 
-#projects li {
+.project-content li {
   display: flex;
   background-color: #FEFFE8E7;
   width: 25%;
   margin: 1rem;
 }
 
-#projects li:hover {
+.project-content li:hover {
   background-color: #7C8032;
   cursor: pointer;
+  box-shadow: 0.3rem 0.3rem 0.5rem black;
 }
 
-#projects li:hover a {
+.project-content li:active {
+  box-shadow: none;
+  transform: translate(0.3rem, 0.3rem);
+}
+
+.project-content li:hover a {
   color: #F4E8FF;
 }
 
-#projects li:hover h4{
+.project-content li:hover h4{
   text-decoration: none;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
 }
 
-#projects a {
+.project-content li:active h4{
+  text-shadow: none;
+}
+
+.project-content a {
   color: #875FAA;
   display: block;
   width: 100%;
@@ -402,11 +413,57 @@ main {
   padding: 0 1rem;
 }
 
-#projects a h4 {
+.project-content a h4 {
   text-decoration: underline;
 }
 
-#projects a p {
+.project-content a p {
   color: #071215;
 }
 
+
+
+/* Footer */
+
+
+
+footer {
+  position: relative;
+  top: 3.8rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background: linear-gradient(#A0A4A4, #FEFFE8)
+}
+
+footer h2 {
+  width: 20%;
+  margin: 1.5rem 0 0;
+  padding: 0.3rem;
+  color: #071215;
+  background-color: #7C8032E1;
+}
+
+footer h3 {
+  margin: 1rem;
+}
+
+footer .links {
+  background-color: #414755;
+  text-align: center;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+
+footer a {
+  color: #BCBF7A;
+}
+
+footer a:hover {
+  color: #875FAA;
+  text-decoration: none;
+}
+
+footer a:active {
+  color: #F4E8FF;
+}
