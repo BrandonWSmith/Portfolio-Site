@@ -1,4 +1,7 @@
 /* Universal */
+
+
+
 html,
 body {
   margin: 0;
@@ -24,6 +27,7 @@ h2 {
 }
 
 h2,
+h3,
 p,
 li,
 nav,
@@ -31,7 +35,12 @@ a {
   border-radius: 0.5rem;
 }
 
+
+
 /* Header */
+
+
+
 header,
 nav {
   display: flex;
@@ -108,13 +117,23 @@ header a:active {
   text-decoration: none;
 }
 
+
+
 /* main */
+
+
+
 main {
   position: relative;
   top: 5rem;
 }
 
+
+
 /* About Me */
+
+
+
 #about-me {
   margin: 0 auto;
   display: flex;
@@ -152,7 +171,11 @@ main {
   text-shadow: 0.1rem 0.1rem black;
 }
 
+
+
 /* Goals */
+
+
 
 #goals {
   position: relative;
@@ -206,4 +229,83 @@ main {
   background-color: rgba(239, 209, 149, 0.9);
   margin: 0.3rem;
   padding: 0.1rem 1rem;
+}
+
+
+
+/* Skills */
+
+
+
+#skills {
+  position: relative;
+  width: 100%;
+  height: 40rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  letter-spacing: .2rem;
+  text-align: center;
+  background: linear-gradient(#071215, #FFFFFF);
+  color: #FEFFE8;
+}
+
+#skills h2{
+  width: 12%;
+  position: absolute;
+  top: 2rem;
+  background-color: rgba(86, 97, 115, 0.8);
+}
+
+#skills h3{
+  padding: 0.5rem;
+  font-family: 'Raleway', sans-serif;
+  background-color: rgba(86, 97, 115, 0.8);
+  box-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.7);
+  color: #BCBF7A;
+}
+
+#skills div {
+  position: relative;
+  top: 3rem;
+  display: flex;
+  justify-content: center;
+  width: 15%;
+  max-height: fit-content;
+  padding: 5rem 1rem;
+  margin: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#skills .break {
+  flex-basis: 100%;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.html {
+  background-image: url("../images/HTML.jpeg");
+}
+
+.css {
+  background-image: url("../images/CSS.jpeg");
+}
+
+.javascript {
+  background-image: url("../images/JavaScript.jpeg");
+}
+
+.c-sharp {
+  background-image: url("../images/C-sharp.jpeg");
+}
+
+#skills .unity {
+  background-image: url("../images/Unity-logo.jpg");
+  background-size: auto;
+  background-position-y: 75%;
 }
