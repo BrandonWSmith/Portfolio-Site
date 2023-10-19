@@ -22,7 +22,7 @@ h1 {
 h2 {
   letter-spacing: 0.2rem;
   word-spacing: 0.2rem;
-  width: 12%;
+  width: 10rem;
   padding: 0.3rem;
   text-align: center;
 }
@@ -145,7 +145,6 @@ main {
 }
 
 #about-me h2 {
-  width: 12%;
   padding: .3rem 0;
   margin-top: 2.5rem;
   color: #F4E8FF;
@@ -260,7 +259,6 @@ main {
 }
 
 #skills h2{
-  width: 12%;
   position: absolute;
   top: 2rem;
   background-color: rgba(86, 97, 115, 0.8);
@@ -325,7 +323,6 @@ main {
 #projects {
   position: relative;
   top: -1.206rem;
-  min-height: 50rem;
   background-image: url("../images/projects-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -333,7 +330,7 @@ main {
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 #projects::before {
@@ -347,6 +344,7 @@ main {
 }
 
 .project-content {
+  margin: 2rem 0;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -365,12 +363,48 @@ main {
   padding: 0.3rem 0.5rem;
 }
 
+.project-content h3:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.arrow {
+  border: solid #071215;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 0.25rem;
+  
+  margin: 0 0.25rem  0 0.5rem;
+}
+
+.down {
+  transform: rotate(45deg);
+  vertical-align: 10%;
+}
+
+.up {
+  transform: rotate(-135deg);
+  vertical-align: -10%;
+}
+
+#codecademy-project-heading-open {
+  display: none;
+}
+
+#unity-project-heading-open {
+  display: none;
+}
+
 .project-content ul {
-  display: flex;
+  display: none;
+  width: 100%;
+  padding: 0;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
   list-style: none;
   text-align: center;
+  overflow: hidden;
 }
 
 .project-content li {
@@ -437,7 +471,7 @@ footer {
 }
 
 footer h2 {
-  width: 20%;
+  width: 15rem;
   margin: 1.5rem 0 0;
   padding: 0.3rem;
   color: #071215;
