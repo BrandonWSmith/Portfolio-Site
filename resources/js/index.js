@@ -47,6 +47,22 @@ const rotateDown = [
     verticalAlign: '10%'
   }
 ]
+const rotateRight = [
+  {
+    transform: 'rotate(135deg)'
+  },
+  {
+    transform: 'rotate(-45deg)'
+  }
+]
+const rotateLeft = [
+  {
+    transform: 'rotate(-45deg)'
+  },
+  {
+    transform: 'rotate(135deg)'
+  }
+]
 const rotateTiming = {
   duration: 198
 }
@@ -63,6 +79,48 @@ const setDisplayNone = target => {
 const setDisplayBlock = target => {
   target.style.display = 'block';
 }
+
+
+
+// Nav Menu SHow/Hide
+
+
+
+let menuClosed = document.getElementById('menu-closed');
+let menuOpen = document.getElementById('menu-open');
+let navbar = document.getElementById('navbar');
+let navLink = document.getElementsByClassName('nav-link')
+let navLinkA = document.getElementsByClassName('nav-link-a')
+
+let menuHeadingArrowLeft = document.getElementById('menu-arrow-left');
+let menuHeadingArrowRight = document.getElementById('menu-arrow-right');
+
+const showMenu = () => {
+  menuHeadingArrowRight.animate(rotateLeft, rotateTiming);
+  setTimeout(setDisplayNone, 500, menuClosed);
+  setDisplayBlock(menuOpen);
+  setTimeout(setDisplayBlock, 500, navLink);
+  navbar.classList.toggle('is-active');
+  menuClosed.classList.toggle('is-active');
+  for (i = 0; i < navLink.length; i ++) {
+    navLink[i].classList.toggle('is-active');
+  }
+}
+
+const hideMenu = () => {
+  menuHeadingArrowLeft.animate(rotateRight, rotateTiming);
+  setDisplayBlock(menuClosed);
+  setDisplayNone(menuOpen);
+  //setTimeout(setDisplayNone, 500, navLink);
+  navbar.classList.toggle('is-active');
+  menuClosed.classList.toggle('is-active');
+  for (i = 0; i < navLink.length; i ++) {
+    navLink[i].classList.toggle('is-active');
+  }
+}
+
+menuClosed.addEventListener('click', showMenu);
+menuOpen.addEventListener('click', hideMenu);
 
 
 

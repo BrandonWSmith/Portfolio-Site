@@ -36,7 +36,32 @@ a {
   border-radius: 0.5rem;
 }
 
+.arrow {
+  border: solid #071215;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 0.25rem;
+  margin: 0 0.25rem  0 0.5rem;
+}
 
+.down {
+  transform: rotate(45deg);
+  vertical-align: 10%;
+}
+
+.up {
+  transform: rotate(-135deg);
+  vertical-align: -10%;
+}
+
+.right {
+  transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  vertical-align: 5%;
+}
 
 /* Header */
 
@@ -72,14 +97,33 @@ header h1 {
 }
 
 nav {
-  width: 50%;
-  padding-right: 2rem;
-  padding-left: 1rem;
+  width: 9%;
+  margin: 0;
+  transition: width 500ms;
   background-color: rgba(65, 71, 85, 0.9);
+  overflow: hidden;
+}
+
+nav.is-active {
+  width: 50%;
+  transition: width 500ms;
+}
+
+#menu-open {
+  display: none;
+}
+
+.nav-link {
+  display: none;
+}
+
+.nav-link.is-active {
+  display: block;
 }
 
 header ul {
-  width: 100%;
+  width: auto;
+  max-height: 2rem;
   margin: 0;
   padding: 0;
   display: flex;
@@ -90,19 +134,41 @@ header ul {
 }
 
 header li {
-  display: flex inline;
   margin: 0;
   padding: 0;
   color: #F4E8FF;
 }
 
-header a {
+#menu-closed {
+  display: block;
+  padding: 0 2rem 0 1.5rem;
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+#menu-closed i {
+  margin: 0 1rem 0 0;
+}
+
+#menu-closed.is-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+#menu-closed:hover,
+#menu-open:hover {
+  cursor: pointer;
+}
+
+.nav-link-a {
   color: #F4E8FF;
-  padding: 0.2rem 0.5rem;
+  padding: 0.2rem 2.3rem;
   text-decoration: none;
 }
 
-header a:hover {
+.nav-link-a:hover,
+#menu-closed:hover,
+#menu-open:hover {
   color: #FEFFE8;
   background-color: rgba(86, 97, 115, 1);
   text-shadow: 0.05rem 0.05rem black;
@@ -110,7 +176,9 @@ header a:hover {
   text-decoration: underline;
 }
 
-header a:active {
+.nav-link-a:active,
+#menu-closed:active,
+#menu-open:active {
   transform: translate(0.1rem, 0.1rem);
   color: #7C8032;
   text-shadow: none;
@@ -366,25 +434,6 @@ main {
 .project-content h3:hover {
   cursor: pointer;
   text-decoration: underline;
-}
-
-.arrow {
-  border: solid #071215;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 0.25rem;
-  
-  margin: 0 0.25rem  0 0.5rem;
-}
-
-.down {
-  transform: rotate(45deg);
-  vertical-align: 10%;
-}
-
-.up {
-  transform: rotate(-135deg);
-  vertical-align: -10%;
 }
 
 #codecademy-project-heading-open {
