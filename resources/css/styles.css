@@ -63,6 +63,8 @@ a {
   vertical-align: 5%;
 }
 
+
+
 /* Header */
 
 
@@ -186,6 +188,83 @@ header li {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 1853px) {
+  nav {
+    width: 12%;
+    top: 0;
+    height: 2rem;
+    transition: all 500ms;
+  }
+
+  nav.is-active {
+    width: fit-content;
+    position: relative;
+    top: 4.8rem;
+    height: 13rem;
+    transition: all 500ms;
+  }
+
+  #menu-closed i {
+    transform: rotate(45deg);
+    vertical-align: 10%;
+  }
+
+  #menu-open i {
+    transform: rotate(-135deg);
+    vertical-align: -10%;
+  }
+
+  #menu-open::after{
+    content: 'Menu';
+    padding-left: 2rem;
+    padding-right: 3rem;
+  }
+
+  header ul {
+    flex-flow: column;
+    align-items: center;
+    max-height: none;
+    width: auto;
+  }
+
+  header ul strong {
+    display: none;
+  }
+
+  header li+li {
+    padding-bottom: 0.2rem;
+  }
+
+  #menu-open {
+    align-self: flex-start;
+    padding-bottom: 0.2rem;
+  }
+}
+
+@media only screen and (max-width: 1389px) {
+  nav {
+    width: 15%;
+  }
+}
+
+@media only screen and (max-width: 1111px) {
+  nav {
+    width: 18%;
+  }
+}
+
+@media only screen and (max-width: 926px) {
+  nav {
+    width: 21%;
+  }
+}
+
+@media only screen and (max-width: 794px) {
+  nav {
+    width: 24%;
+  }
+}
+
 
 
 /* main (fixed header offset)*/
@@ -212,15 +291,15 @@ main {
   background: linear-gradient(#EFD195, #071215);
 }
 
+#about-me img {
+  width: 15%;
+}
+
 #about-me h2 {
   padding: .3rem 0;
   margin-top: 2.5rem;
   color: #F4E8FF;
   background-color: rgb(65, 71, 85)
-}
-
-#about-me img {
-  width: 15%;
 }
 
 #about-me p {

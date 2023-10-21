@@ -1,0 +1,56 @@
+main {
+  background: linear-gradient(#EFD195, #071215);
+  background-repeat: no-repeat;
+  height: 89.7vh;
+}
+
+#contact {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  align-items: center;
+}
+
+#contact {
+  height:fit-content;
+}
+
+#contact h2 {
+  padding: .3rem 0;
+  margin-top: 2.5rem;
+  color: #F4E8FF;
+  background-color: rgb(65, 71, 85)
+}
+
+#contact img {
+  width: 15%;
+}
+
+#contact h3 {
+  margin: 1rem;
+  color: #071215;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 0.1rem 0.1rem 0.4rem #071215;
+}
+
+#contact-links {
+  background-color: #414755;
+  text-align: center;
+  margin: 1rem;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+}
+
+#contact-links a {
+  color: #BCBF7A;
+}
+
+#contact-links a:hover {
+  color: #875FAA;
+  text-decoration: none;
+}
+
+#contact-links a:active {
+  color: #F4E8FF;
+}
