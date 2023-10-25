@@ -101,6 +101,7 @@ header h1 {
 nav {
   width: 9%;
   margin: 0;
+  display: flex;
   transition: width 500ms;
   background-color: rgba(65, 71, 85, 0.9);
   overflow: hidden;
@@ -109,10 +110,6 @@ nav {
 nav.is-active {
   width: 50%;
   transition: width 500ms;
-}
-
-#menu-open {
-  display: none;
 }
 
 .nav-link {
@@ -141,8 +138,13 @@ header li {
   color: #F4E8FF;
 }
 
+#menu-open {
+  display: none;
+}
+
 #menu-closed {
   display: block;
+  justify-self: center;
   padding: 0 2rem 0 1.5rem;
   opacity: 1;
   transition: opacity 300ms;
@@ -186,6 +188,18 @@ header li {
   text-shadow: none;
   box-shadow: none;
   text-decoration: none;
+}
+
+@media only screen and (min-width: 2560px) {
+  nav {
+    width: 9%;
+  }
+}
+
+@media only screen and (max-width: 2560px) {
+  nav {
+    width: 9%;
+  }
 }
 
 @media only screen and (max-width: 1853px) {
@@ -260,8 +274,25 @@ header li {
 }
 
 @media only screen and (max-width: 794px) {
+  header {
+    flex-flow: column;
+    height: 6rem;
+  }
+
+  header h1 {
+    margin: 1.5rem;
+  }
+
   nav {
     width: 24%;
+    overflow: visible;
+    align-self: flex-start;
+    top: -11rem;
+    height: auto;
+  }
+
+  nav.is-active{
+    top: 0;
   }
 }
 
