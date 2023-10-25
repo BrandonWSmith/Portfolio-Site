@@ -191,18 +191,21 @@ header li {
 }
 
 @media only screen and (min-width: 2560px) {
+  /* Header*/
   nav {
     width: 9%;
   }
 }
 
 @media only screen and (max-width: 2560px) {
+  /* Header*/
   nav {
     width: 9%;
   }
 }
 
 @media only screen and (max-width: 1853px) {
+  /* Header (set menu to vertical orientation)*/
   nav {
     width: 12%;
     top: 0;
@@ -256,24 +259,28 @@ header li {
 }
 
 @media only screen and (max-width: 1389px) {
+  /* Header*/
   nav {
     width: 15%;
   }
 }
 
 @media only screen and (max-width: 1111px) {
+  /* Header*/
   nav {
     width: 18%;
   }
 }
 
 @media only screen and (max-width: 926px) {
+  /* Header*/
   nav {
     width: 21%;
   }
 }
 
 @media only screen and (max-width: 794px) {
+  /* Header (set items to column, move menu to left)*/
   header {
     flex-flow: column;
     height: 6rem;
@@ -281,6 +288,7 @@ header li {
 
   header h1 {
     margin: 1.5rem;
+    border-radius: 0.5rem;
   }
 
   nav {
@@ -293,6 +301,67 @@ header li {
 
   nav.is-active{
     top: 0;
+  }
+}
+
+@media only screen and (max-width: 617px) {
+  /* Header */
+  nav {
+    width: 30%;
+  }
+
+  header h1 {
+    font-size: 2rem;
+    margin: 1.83rem;
+  }
+}
+
+@media only screen and (max-width: 555px) {
+  /* Header */
+  nav {
+    width: 33%;
+  }
+
+  header h1 {
+    font-size: 1.7rem;
+    margin: 2rem;
+  }
+}
+
+@media only screen and (max-width: 505px) {
+  /* Header */
+  nav {
+    width: 36%;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    margin: 2.13rem;
+  }
+}
+
+@media only screen and (max-width: 469px) {
+  /* Header */
+  nav {
+    width: 39%;
+  }
+
+  header h1 {
+    font-size: 1.3rem;
+    margin: 2.26rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  /* Header */
+  nav {
+    width: 47%;
+  }
+
+  header h1 {
+    font-size: 1rem;
+    text-align: center;
+    margin: 1.78rem;
   }
 }
 
